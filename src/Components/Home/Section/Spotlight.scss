@@ -1,0 +1,142 @@
+.spotlight {
+    padding: 30px 0;
+    .container {
+        h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 36px;
+            i {
+                color: #fece50;
+                font-size: 40px;
+            }
+        }
+        hr {
+            color: #fff;
+            margin: 0;
+            height: 2px;
+            background-color: #fff;
+        }
+        .list-spotlight {
+            float: right;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+            li {
+                text-decoration: none;
+                display: block;
+                color: #ccc;
+                font-size: 14px;
+                margin-left: 15px;
+                padding: 16px 0;
+                position: relative;
+                transition: all 0.4s;
+                cursor: pointer;
+                &:hover {
+                    color: #fff;
+                    &::before {
+                        background-color: #eb315a;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    transition: all 0.4s;
+                    width: 100%;
+                    height: 4px;
+                    background-color: transparent;
+                }
+                &.active {
+                    color: #fff;
+                    &::before {
+                        background-color: #eb315a;
+                    }
+                }
+            }
+        }
+        .item-spotlight {
+            margin-top: 30px;
+            .item-img {
+                overflow: hidden;
+                position: relative;
+                &:hover img {
+                    transform: scale(1.2); 
+                }
+                &:hover a {
+                    color: #fff; 
+                }
+                img {
+                    transition:  all 0.9s;
+                    display: block;
+                    width: 100%;
+                }
+
+                a {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: transparent;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    i {
+                        font-size: 50px;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #fece50;
+                        }
+                    }
+                }
+            }
+            .item-text {
+                h2 {
+                    color: #fff;
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+                .review {
+                    margin: 8px 0 35px;
+                    .stars {
+                        display: flex;
+                        margin-right: 4px;
+                        align-items: center;
+                        list-style: none;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        margin-left: 0;
+                        li {
+                            color: #fece50;
+                            font-size: 13px;
+                            margin-right: 8px;
+                        }
+                    }
+                    p {
+                        color: #fff;
+                    }
+                }
+
+                h4 {
+                    color: #fff;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 18px;
+                }
+            }
+        }
+        .list-sidebar {
+            margin-top: 20px;
+            img {
+                display: block;
+                width: 100%;
+                margin-top: 35px;
+                border-radius: 10px;
+                &:first-child {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

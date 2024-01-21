@@ -1,0 +1,78 @@
+.footer {
+    background-color: #0c0c0f;
+    padding: 90px 0px 30px;
+    .container {
+        .footer-item {
+            margin-bottom: 40px;
+            img {
+                height: 70px;
+                object-fit: cover;
+                margin-bottom: 40px;
+            }
+            h6 {
+                margin-top: 18px;
+                color: #ffffff;
+            }
+            h4 {
+                font-size: 18px;
+                margin-top: 16px;
+                color: #ffffff;
+                margin-bottom: 40px;
+            }
+            p {
+                color: #ffffff;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0;
+                li {
+                    margin-top: 15px;
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            input {
+                width: 100%;
+                background: rgb(36, 38, 45);
+                padding: 8px 16px;
+                outline: none;
+                color: #ffffff;
+                border-width: initial;
+                border-style: none;
+                border-color: initial;
+                border-image: initial;
+            }
+            button {
+                margin-top: 8px;
+                border: none;
+                background-color: transparent;
+                color: #e83e8c;
+            }
+        }
+        hr {
+            border-top: 1px solid rgb(221, 221, 221);
+        }
+        .footer-bottom {
+            .container {
+                p {
+                    color: #ffffff;
+                    margin-left: -12px;
+                }
+                button {
+                    border: none;
+                    background-color: transparent;
+                    color: #ffffff;
+                    float: right;
+                    transition: all 0.3s;
+                    margin-right: -12px;
+                    &:hover {
+                        color: #e83e8c;
+                    }
+                }
+            }
+        }
+    }
+}

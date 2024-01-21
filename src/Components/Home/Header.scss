@@ -1,0 +1,179 @@
+.header {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .container {
+        padding: 16px;
+        .right {
+            img {
+                object-fit: cover;
+                vertical-align: middle;
+                height: 60px;
+            }
+        }
+        .left {
+            .up {
+                .search {
+                    display: flex;
+                    position: relative;
+                    margin: 8px 16px;
+                    align-items: center;
+                    padding: 0 8px;
+                    border-radius: 30px;
+                    border: 1px solid #ffffff;
+                    input {
+                        padding: 8px;
+                        border-left: 1px solid #ffffff;
+                        outline: none;
+                        background-color: transparent;
+                        color: #ffffff;
+                        border-bottom: none;
+                        border-top: none;
+                        border-right: none;
+                    }
+                    select {
+                        background: url("../../Assets/Img/select-icon.png") no-repeat right center;
+                        color: #fff;
+                        padding: 0 20px 0 30px;
+                        margin-right: 8px;
+                        border: none;
+                        outline: none;
+                        -moz-appearance: none;
+                        -webkit-appearance: none;
+                        appearance: none;
+                        option {
+                            background-color: #ffffff;
+                            color: #333;
+                        }
+                    }
+                    button {
+                        border: none;
+                        transition: all 0.3s;
+                        background-color: transparent;
+                        color: #ffffff;
+                        &:hover {
+                            color: #eb315a;
+                        }
+                    }
+
+                    .result {
+                        position: absolute;
+                        top: 102%;
+                        left: 20px;
+                        right: 20px;
+                        ul {
+                            list-style: none;
+                            overflow: auto;
+                            background-color: #333;
+                            margin: 0;
+                            padding: 0;
+                            max-height: 360px;
+                            overflow-y: auto;
+                            li {
+                                .result-item {
+                                    text-decoration: none;
+                                    display: flex;
+                                    padding: 8px;
+                                    border-radius: 8px;
+                                    margin: 8px;
+                                    align-items: center;
+                                    &:hover {
+                                        background-color: rgba(19,21,31,0.6);
+                                    }
+                                    .result-img {
+                                        margin-right: 8px;
+                                        img {
+                                            display: block;
+                                            width: 100%;
+                                            max-width: 40px;
+                                            max-height: 90px;
+                                        }
+                                    }
+                                    .result-text {
+                                        h4 {
+                                            color: #fff;
+                                            font-size: 16px;
+                                        }
+                                        .review {
+                                            .stars {
+                                                display: flex;
+                                                background-color: transparent;
+                                                margin-right: 4px;
+                                                align-items: center;
+                                                list-style: none;
+                                                padding-left: 0;
+                                                margin-bottom: 0;
+                                                margin-top: 0;
+                                                margin-left: 0;
+                                                li {
+                                                    color: #fece50;
+                                                    font-size: 13px;
+                                                    margin-right: 8px;
+                                                }
+                                            }
+                                            p {
+                                                color: #fff;
+                                            }
+                                        }
+                        
+                                        p {
+                                            color: #fff;
+                                            padding: 0;
+                                            margin: 0;
+                                            font-size: 11px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: #eb315a;
+                    }
+                }
+            }
+            .down {
+                ul {
+                    list-style: none;
+                    margin: 8px 0;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
+                            padding: 8px;
+                            margin: 0 16px;
+                            transition: all 0.3s;
+                            &:hover {
+                                color: #eb315a;
+                            }
+                            &.active {
+                                color: #eb315a;
+                            }
+                        }
+                        button {
+                            padding: 4px 32px;
+                            color: #ffffff;
+                            background-color: #eb315a;
+                            transition: all 0.3s;
+                            border: 1px solid transparent;
+                            border-radius: 30px;
+                            &:hover {
+                                background-color: transparent;
+                                border-color: #eb315a;
+                                color: #eb315a;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

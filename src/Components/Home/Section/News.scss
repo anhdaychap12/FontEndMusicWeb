@@ -1,0 +1,90 @@
+.news {
+    padding-top: 30px;
+    .container {
+        h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 36px;
+            i {
+                color: #fece50;
+                font-size: 40px;
+            }
+        }
+        hr {
+            color: #fff;
+            margin: 16px 0;
+            margin-left: 0;
+            margin-right: 0;
+            height: 2px;
+            background-color: #fff;
+        }
+    }
+    .list-slide {
+        margin-top: 16px;
+        margin-bottom: -6px;
+        .news-item {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 350px;
+            margin: 0 16px;
+            position: relative;
+            
+            .new-date {
+                position: absolute;
+                color: #fff;
+                h2 {
+                    font-size: 30px;
+                    margin: 0;
+                    span {
+                        margin: 0;
+                        font-size: 16px;
+                    }
+                }
+                h1 {
+                    margin: 0;
+                    font-size: 36px;
+                }
+                display: inline-block;
+                top: 0;
+                left: 60px;
+                padding: 20px;
+                background: linear-gradient(135deg, #f09819 0%,#ef8128 34%,#ec474c 64%,#eb315a 100%);
+            }
+            .new-content {
+                position: absolute;
+                left: 60px;
+                bottom: 35px;
+                right: 420px;
+                h2 {
+                    margin-bottom: 15px;
+                    color: #fff;
+                    margin-top: 0;
+                }
+                p {
+                    color: #fff;
+                    font-size: 14px;
+                    margin: 0;
+                }
+            }
+            a {
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
+                transition: all 0.3s;
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    color: #eb315a;
+                }
+            }
+        }
+        .slick-slider.slick-initialized {
+            .slick-arrow.slick-prev,
+            .slick-arrow.slick-next
+            {
+                display: none !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.video {
+    .container {
+        h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 36px;
+            i {
+                color: #fece50;
+                font-size: 40px;
+            }
+        }
+        hr {
+            color: #fff;
+            margin-top: 16px;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            height: 2px;
+            background-color: #fff;
+        }
+        .video-item {
+            position: relative;
+            margin-top: 35px;
+            .video-img {
+                position: relative;
+                overflow: hidden;
+                &:hover img {
+                    transform: scale(1.2); 
+                }
+                img {
+                    display: block;
+                    border-radius: 10px;
+                    transition: all 0.4s;
+                    width: 100%;
+                }
+                a{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: #fff;
+                    cursor: pointer;
+                    i {
+                        font-size: 50px;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #fece50;
+                        }
+                    }
+                }
+            }
+            .video-text {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: rgba(19,21,31,0.6);
+                padding: 20px 35px;
+                width: 100%;
+                h2 {
+                    color: #fff;
+                    font-size: 30px;
+                }
+                .review {
+                    margin: 8px 0 0;
+                    .stars {
+                        display: flex;
+                        margin-right: 4px;
+                        align-items: center;
+                        list-style: none;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        margin-left: 0;
+                        li {
+                            color: #fece50;
+                            font-size: 13px;
+                            margin-right: 8px;
+                        }
+                    }
+                    p {
+                        color: #fff;
+                    }
+                }
+
+                h4 {
+                    color: #fff;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

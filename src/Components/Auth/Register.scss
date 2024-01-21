@@ -1,0 +1,189 @@
+.register {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: #13151f;
+    justify-content: center;
+    .login-form {
+        max-width: 500px;
+        position: relative;
+        max-height: 70%;
+        background-color: #fff;
+        padding: 8px 16px;
+        border-radius: 15px;
+        overflow: hidden;
+        .home {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+            z-index: 10;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px 16px;
+            background-color: #c536a4;
+            border-left: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s;
+            border-bottom-left-radius: 15px;
+            &:hover {
+                color: #c536a4;
+                background-color: transparent;
+                border-color: #c536a4;
+            }
+        }
+        .form-group{
+            position: relative;
+            h2 {
+                color: #333;
+                margin-bottom: 16px;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            .show-pass {
+                position: absolute;
+                top: 53px;
+                right: 20px;
+                cursor: pointer;
+                &:hover {
+                    color: #eb315a;
+                }
+            }
+
+            label {
+                font-weight: 600;
+                margin: 8px 0;
+            }
+
+            input {
+                width: 100%;
+                padding: 8px;
+                outline: none;
+                border: 1px solid #333;
+                border-radius: 8px;
+                color: #333;
+                &.invalid {
+                    border: 1px solid #eb315a;
+                }
+            }
+            .d-flex {
+                a { 
+                    position: inherit;
+                    display: block;
+                    margin: 16px 0;
+                    text-decoration: none;
+                    color: #333;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: #eb315a;
+                    }
+                }
+            }
+            button {
+                border: 1px solid transparent;
+                color: #fff;
+                background-color: #eb315a;
+                padding: 8px;
+                transition: all 0.3s;
+                border-radius: 8px;
+                width: 100%;
+                &:hover {
+                    color: #eb315a;
+                    border-color: #eb315a;
+                    background-color: transparent;
+                }
+            }
+
+            p {
+                color: #333;
+                margin: 8px 0;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                li {
+                    a {
+                        text-decoration: none;
+                        border: 1px solid transparent;
+                        display: block;
+                        padding: 8px 16px;
+                        border-radius: 8px;
+                        margin-right: 10px; 
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                    .fb {
+                        background-color: #3a559f;
+                        transition: all 0.3s;
+                    }
+                    .tw {
+                        background-color: #50abf1;
+                        transition: all 0.3s;
+                    }
+                    .gg {
+                        background-color: #dd4b39;
+                        transition: all 0.3s;
+                    }
+                    .lk {
+                        background-color: #0084b1;
+                        transition: all 0.3s;
+                    }
+                    .in {
+                        background-color: #c536a4;
+                        margin-right: 0;
+                        transition: all 0.3s;
+                    }
+                    i {
+                        color: #fff;
+                        transition: all 0.3s;
+                    }
+                    .fb:hover {
+                        border-color: #3a559f;
+                        background-color: transparent;
+                        i {
+                            color: #3a559f;
+                        }
+                    }
+                    .tw:hover {
+                        border-color: #50abf1;
+                        background-color: transparent;
+                        i {
+                            color: #50abf1;
+                        }
+                    }
+                    .gg:hover {
+                        border-color: #dd4b39;
+                        background-color: transparent;
+                        i {
+                         color: #dd4b39;
+                        }
+                    }
+                    .lk:hover {
+                        border-color: #0084b1;
+                        background-color: transparent;
+                        i {
+                            color: #0084b1;
+                        }
+                    }
+                    .in:hover{
+                        border-color: #c536a4;
+                        background-color: transparent;
+                        i {
+                            color: #c536a4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #13151f;
+}
+
+.index {
+    .banner {
+        position: relative;
+        background-image: url('../../Assets/Img/hero-area.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        min-height: 100vh;
+        .item-slide {
+            .banner-slide {
+                background: #13151f;
+                margin: 280px 25px 50px;
+                padding-top: 52px;
+                box-shadow: 0 0 20px #000000;
+                .item-img {
+                    flex: 1;
+                    margin: 16px;
+                    img {
+                        display: block;
+                        max-width: 100%;
+                        position: relative;
+                        margin-top: -120px;
+                        vertical-align: middle;
+                    }
+                }
+                .item-text {
+                    flex: 1;
+                    margin-right: 32px;
+                    h2 {
+                        color: #fff;
+                        font-size: 30px;
+                    }
+                    h3 {
+                        margin-top: 35px;
+                        color: #fff;
+                    }
+                    .review {
+                        margin: 8px 0 35px;
+                        display: flex;
+                        align-items: center;
+                        .stars {
+                            display: flex;
+                            align-items: center;
+                            list-style: none;
+                            padding-left: 0;
+                            li {
+                                color: #fece50;
+                                font-size: 13px;
+                                margin-right: 8px;
+                            }
+                        }
+                        p {
+                            color: #fff;
+                        }
+                    }
+                    .cast {
+                        ul {
+                            display: flex;
+                            list-style: none;
+                            padding-left: 0;
+                            align-items: center;
+                            li {
+                                a {
+                                    text-decoration: none;
+                                    display: block;
+                                    margin-right: 8px;
+                                    img {
+                                        object-fit: cover;
+                                        height: 50px;
+                                        width: 50px;
+                                        border-radius: 50%;
+                                        border: 2px solid #f1f1f1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        color: #f1f1f1;
+                        font-size: 13px;
+                    }
+                    .ticket {
+                        h3 {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+                        button {
+                            border: 1px solid transparent;    
+                            color: #fff;
+                            padding: 4px 32px;
+                            border-radius: 30px;
+                            transition: all 0.3s;
+                            background-color: #963dad;
+                            &:hover {
+                                background-color: transparent;
+                                color: #963dad;
+                                border-color: #963dad;
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
